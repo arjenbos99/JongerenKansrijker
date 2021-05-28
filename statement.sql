@@ -40,3 +40,10 @@ CREATE TABLE jongereactiviteit(
     FOREIGN KEY(jongerecode) REFERENCES jongere(jongerecode),
     FOREIGN KEY(activiteitcode) REFERENCES activiteit(activiteitcode)
 );
+
+CREATE TABLE medewerkers(
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(25),
+    password VARCHAR(200),
+    PRIMARY KEY (id)
+);
